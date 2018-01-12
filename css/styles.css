@@ -37,3 +37,7 @@
 #selectMultiple {
   display: none;
 }
+
+#backToMain {
+  float: right;
+}

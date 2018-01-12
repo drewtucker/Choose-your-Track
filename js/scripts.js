@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  //Logic for form asking whether user would prefer to learn Front End or Back End//
   $("form#frontOrBack").submit(function(event) {
     var userInput = $("input:radio[name=frontOrBack]:checked").val();
     event.preventDefault();
@@ -12,6 +13,7 @@ $(document).ready(function() {
     }
   });
 
+  //Logic for form asking whether user prefers learning broad or specific Front-End concepts.//
   $("form#selectFrontEnd").submit(function(event) {
     var userInput = $("input:radio[name=selectFrontEnd]:checked").val();
     event.preventDefault();
@@ -25,6 +27,7 @@ $(document).ready(function() {
     }
   });
 
+  //Logic for form asking what size of company the user would ideally like to work for.//
   $("form#selectBackEnd").submit(function(event) {
     var userInput = $("input:radio[name=selectBackEnd]:checked").val();
     event.preventDefault();
@@ -42,6 +45,7 @@ $(document).ready(function() {
     }
 });
 
+  //Logic for form asking whether user would rather focus on one project or multiple.//
   $("form#noPreferenceForm").submit(function() {
     var userInput = $("input:radio[name=selectNoPreference]:checked").val();
     event.preventDefault();
@@ -54,5 +58,16 @@ $(document).ready(function() {
       $("form#noPreferenceForm").hide();
     }
 
+});
+
+  $("form.helpQuery").submit(function() {
+    var userInput = $("input:radio[name=helpQuery]:checked").val();
+    event.preventDefault();
+    if (userInput === "yes") {
+      alert("Thanks for your input!")
+    }
+    else if (userInput === "no") {
+      alert("How rude!")
+    }
 });
 });
