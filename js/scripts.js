@@ -7,7 +7,7 @@ $(document).ready(function() {
     $("form#nameEntry").hide();
     $(".userName").text(userInput + ",");
     $("#decidingWhich").hide();
-});
+  });
 
   //Logic for form asking whether user would prefer to learn Front End or Back End//
   $("form#frontOrBack").submit(function(event) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
       $("#selectSmall").fadeToggle();
       $("form#selectBackEnd").hide();
     }
-});
+  });
 
   //Logic for form asking whether user would rather focus on one project or multiple.//
   $("form#noPreferenceForm").submit(function() {
@@ -69,7 +69,7 @@ $(document).ready(function() {
       $("form#noPreferenceForm").hide();
     }
 
-});
+  });
   //Logic for form asking if the quiz was helpful or not.//
   $("form.helpQuery").submit(function() {
     var userInput = $("input:radio[name=helpQuery]:checked").val();
@@ -80,5 +80,5 @@ $(document).ready(function() {
     else if (userInput === "no") {
       alert("How rude!")
     }
-});
+  });
 });
