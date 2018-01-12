@@ -1,8 +1,6 @@
-#selectFrontEnd {
-  display: none;
-}
+/* FRONT END OPTIONS */
 
-#selectBackEnd {
+#selectFrontEnd {
   display: none;
 }
 
@@ -11,5 +9,31 @@
 }
 
 #selectBroad {
+  display: none;
+}
+
+/* BACK END OPTIONS */
+
+#selectBackEnd {
+  display: none;
+}
+
+#selectLarge {
+  display: none;
+}
+
+#selectSmall {
+  display: none;
+}
+
+#selectNoPreference {
+  display: none;
+}
+
+#selectOne {
+  display: none;
+}
+
+#selectMultiple {
   display: none;
 }

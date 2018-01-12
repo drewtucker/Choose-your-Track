@@ -23,5 +23,36 @@ $(document).ready(function() {
       $("#selectBroad").show();
       $("form#selectFrontEnd").hide()
     }
+  });
+
+  $("form#selectBackEnd").submit(function(event) {
+    var userInput = $("input:radio[name=selectBackEnd]:checked").val();
+    event.preventDefault();
+    if (userInput === "large") {
+      $("#selectLarge").show();
+      $("form#selectBackEnd").hide();
+    }
+    else if (userInput === "noPreference") {
+      $("#selectNoPreference").show();
+      $("form#selectBackEnd").hide();
+    }
+    else if (userInput === "small") {
+      $("#selectSmall").show();
+      $("form#selectBackEnd").hide();
+    }
+});
+
+  $("form#noPreferenceForm").submit(function() {
+    var userInput = $("input:radio[name=selectNoPreference]:checked").val();
+    event.preventDefault();
+    if (userInput === "one") {
+      $("#selectOne").show();
+      $("form#noPreferenceForm").hide();
+    }
+    else if (userInput === "multiple") {
+      $("#selectMultiple").show();
+      $("form#noPreferenceForm").hide();
+    }
+
 });
 });
