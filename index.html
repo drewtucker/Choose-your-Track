@@ -10,7 +10,27 @@
     <title>Choose your Track</title>
   </head>
   <body>
-    
+    <div class="container">
+      <h2>Programming Track Suggestor</h2>
+      <h4>Can't decide what language you'd like to study? No problem; simply answer a few questions.</h4>
+      <h6>Are you more interested in learning Front End development?(How to style and format a webpage) or Back End?(Developing the logic and functions behind a webpage)</h6>
+      <form id="frontOrBack">
+      <div class="radio">
+        <label>
+          <input type="radio" name="frontOrBack" value="frontEnd" checked>
+          Front End
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="frontOrBack" value="backEnd">
+          Back End
+        </label>
+      </div>
+      <button type="submit" class="btn btn-success" name="button">Go!</button>
+    </form>
 
+
+    </div>
   </body>
 </html>
