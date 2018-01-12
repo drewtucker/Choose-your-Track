@@ -1,4 +1,7 @@
 /* FRONT END OPTIONS */
+#frontOrBack {
+  display: none;
+}
 
 #selectFrontEnd {
   display: none;
@@ -47,6 +50,12 @@
 .jumbotron {
   background-color: steelblue;
 }
+
+.highlight {
+  color: yellowgreen;
+  font-weight: bold;
+}
+
 
 body {
   background-color: whitesmoke;

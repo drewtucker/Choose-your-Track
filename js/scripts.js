@@ -1,15 +1,24 @@
 $(document).ready(function() {
+  //Logic for name entry form.//
+  $("form#nameEntry").submit(function() {
+    var userInput = $("input#nameInput").val();
+    event.preventDefault();
+    $("form#frontOrBack").fadeToggle();
+    $("form#nameEntry").hide();
+    $(".userName").text(userInput + ",");
+});
+
   //Logic for form asking whether user would prefer to learn Front End or Back End//
   $("form#frontOrBack").submit(function(event) {
     var userInput = $("input:radio[name=frontOrBack]:checked").val();
     event.preventDefault();
     if (userInput === "frontEnd") {
-      $("form#selectFrontEnd").show();
+      $("form#selectFrontEnd").fadeToggle();
       $("form#frontOrBack").hide();
       $("#decidingWhich").hide();
     }
     else if (userInput === "backEnd") {
-      $("form#selectBackEnd").show();
+      $("form#selectBackEnd").fadeToggle();
       $("form#frontOrBack").hide();
       $("#decidingWhich").hide();
     }
@@ -20,11 +29,11 @@ $(document).ready(function() {
     var userInput = $("input:radio[name=selectFrontEnd]:checked").val();
     event.preventDefault();
     if (userInput === "specific") {
-      $("#selectSpecific").show();
+      $("#selectSpecific").fadeToggle();
       $("form#selectFrontEnd").hide();
     }
     else if (userInput === "broad") {
-      $("#selectBroad").show();
+      $("#selectBroad").fadeToggle();
       $("form#selectFrontEnd").hide()
     }
   });
@@ -34,15 +43,15 @@ $(document).ready(function() {
     var userInput = $("input:radio[name=selectBackEnd]:checked").val();
     event.preventDefault();
     if (userInput === "large") {
-      $("#selectLarge").show();
+      $("#selectLarge").fadeToggle();
       $("form#selectBackEnd").hide();
     }
     else if (userInput === "noPreference") {
-      $("#selectNoPreference").show();
+      $("#selectNoPreference").fadeToggle();
       $("form#selectBackEnd").hide();
     }
     else if (userInput === "small") {
-      $("#selectSmall").show();
+      $("#selectSmall").fadeToggle();
       $("form#selectBackEnd").hide();
     }
 });
@@ -52,11 +61,11 @@ $(document).ready(function() {
     var userInput = $("input:radio[name=selectNoPreference]:checked").val();
     event.preventDefault();
     if (userInput === "one") {
-      $("#selectOne").show();
+      $("#selectOne").fadeToggle();
       $("form#noPreferenceForm").hide();
     }
     else if (userInput === "multiple") {
-      $("#selectMultiple").show();
+      $("#selectMultiple").fadeToggle();
       $("form#noPreferenceForm").hide();
     }
 
