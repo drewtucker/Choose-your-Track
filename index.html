@@ -13,11 +13,11 @@
     <div class="container">
       <h2>Programming Track Suggestor</h2>
       <h4>Can't decide what language you'd like to study? No problem; simply answer a few questions.</h4>
-      <h6>Are you more interested in learning Front End development?(How to style and format a webpage) or Back End?(Developing the logic and functions behind a webpage)</h6>
       <form id="frontOrBack">
+        <h6>Are you more interested in learning Front End development?(How to style and format a webpage) or Back End?(Developing the logic and functions behind a webpage)</h6>
       <div class="radio">
         <label>
-          <input type="radio" name="frontOrBack" value="frontEnd" checked>
+          <input type="radio" name="frontOrBack" value="frontEnd">
           Front End
         </label>
       </div>
@@ -28,7 +28,53 @@
         </label>
       </div>
       <button type="submit" class="btn btn-success" name="button">Go!</button>
-    </form>
+      </form>
+      <form id="selectFrontEnd">
+        <h6>Are you more interested in learning a specific design language or learning more about the broader concepts behind Design?</h6>
+        <div class="radio">
+          <label>
+            <input type="radio" name="selectFrontEnd" value="specific" >
+            Specific Language
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="selectFrontEnd" value="broad">
+            Overall Concept
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
+      <div id="selectSpecific">
+        <h5>You should study: CSS</h5>
+        <h6>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</h6>
+      </div>
+      <div id="selectBroad">
+        <h5>You should study: Web Design</h5>
+        <h6>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces. </h6>
+      </div>
+      <form id="selectBackEnd">
+        <h6>Are you more interested in working for a large company or a smaller business/startup?</h6>
+        <div class="radio">
+          <label>
+            <input type="radio" name="selectBackEnd" value="large" >
+            Large Company
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="selectBackEnd" value="small" >
+            Small Company/Startup
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="selectBackEnd" value="noPreference">
+            No Preference
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
 
 
     </div>
