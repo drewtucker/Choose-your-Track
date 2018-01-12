@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Choose your Track</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h2>Programming Track Suggestor</h2>
-      </div>
-      <h5 id="decidingWhich">Deciding which programming language to focus on can be daunting! Answer a few questions below to recieve a suggestion.</h5>
-      <br>
-      <form id="nameEntry">
-        <label for="nameInput">Enter your first name:</label>
-        <input id="nameInput" type="text">
-        <button type="submit" class="btn btn-success">Submit!</button>
-      </form>
-      <form id="frontOrBack">
-        <h6>Are you more interested in learning Front End development?(How to style and format a webpage) or Back End?(Developing the logic and functions behind a webpage)</h6>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Choose your Track</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Programming Track Suggestor</h2>
+    </div>
+    <h5 id="decidingWhich">Deciding which programming language to focus on can be daunting! Answer a few questions below to recieve a suggestion.</h5>
+    <br>
+    <form id="nameEntry">
+      <label for="nameInput">Enter your first name:</label>
+      <input id="nameInput" type="text">
+      <button type="submit" class="btn btn-success">Submit!</button>
+    </form>
+    <form id="frontOrBack">
+      <h6>Are you more interested in learning Front End development?(How to style and format a webpage) or Back End?(Developing the logic and functions behind a webpage)</h6>
       <div class="radio">
         <label>
           <input type="radio" name="frontOrBack" value="frontEnd">
@@ -36,190 +36,190 @@
         </label>
       </div>
       <button type="submit" class="btn btn-success" name="button">Go!</button>
-      </form>
-      <form id="selectFrontEnd">
-        <h6>Are you more interested in learning a specific design language or learning more about the broader concepts behind Design?</h6>
-        <div class="radio">
-          <label>
-            <input type="radio" name="selectFrontEnd" value="specific" >
-            Specific Language
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="selectFrontEnd" value="broad">
-            Overall Concept
-          </label>
-        </div>
-        <button type="submit" class="btn btn-success" name="button">Go!</button>
-      </form>
-      <div id="selectSpecific">
-        <h5> <span class="userName"></span> you should study: <span class="highlight">CSS</span></h5>
-        <h6>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</h6>
-        <form class="helpQuery">
-          <br>
-          <p>Was this quiz helpful to you?</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="yes" >
-              Yes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="no">
-              No
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success" name="button">Go!</button>
-        </form>
+    </form>
+    <form id="selectFrontEnd">
+      <h6>Are you more interested in learning a specific design language or learning more about the broader concepts behind Design?</h6>
+      <div class="radio">
+        <label>
+          <input type="radio" name="selectFrontEnd" value="specific" >
+          Specific Language
+        </label>
       </div>
-      <div id="selectBroad">
-        <h5><span class="userName"></span> you should study: <span class="highlight">Web Design</span></h5>
-        <h6>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces. </h6>
-        <form class="helpQuery">
-          <br>
-          <p>Was this quiz helpful to you?</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="yes" >
-              Yes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="no">
-              No
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success" name="button">Go!</button>
-        </form>
+      <div class="radio">
+        <label>
+          <input type="radio" name="selectFrontEnd" value="broad">
+          Overall Concept
+        </label>
       </div>
-      <form id="selectBackEnd">
-        <h6>Are you more interested in working for a large company or a smaller business/startup?</h6>
+      <button type="submit" class="btn btn-success" name="button">Go!</button>
+    </form>
+    <div id="selectSpecific">
+      <h5> <span class="userName"></span> you should study: <span class="highlight">CSS</span></h5>
+      <h6>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</h6>
+      <form class="helpQuery">
+        <br>
+        <p>Was this quiz helpful to you?</p>
         <div class="radio">
           <label>
-            <input type="radio" name="selectBackEnd" value="large" >
-            Large Company
+            <input type="radio" name="helpQuery" value="yes" >
+            Yes
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="selectBackEnd" value="small" >
-            Small Company/Startup
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="selectBackEnd" value="noPreference">
-            No Preference
+            <input type="radio" name="helpQuery" value="no">
+            No
           </label>
         </div>
         <button type="submit" class="btn btn-success" name="button">Go!</button>
       </form>
-      <div id="selectLarge">
-        <h5><span class="userName"></span> you should study: <span class="highlight">C#</span></h5>
-        <h6>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</h6>
-        <form class="helpQuery">
-          <br>
-          <p>Was this quiz helpful to you?</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="yes" >
-              Yes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="no">
-              No
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success" name="button">Go!</button>
-        </form>
-      </div>
-      <div id="selectSmall">
-        <h5><span class="userName"></span> you should study: <span class="highlight">Ruby</span></h5>
-        <h6>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</h6>
-        <form class="helpQuery">
-          <br>
-          <p>Was this quiz helpful to you?</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="yes" >
-              Yes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="no">
-              No
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success" name="button">Go!</button>
-        </form>
-      </div>
-      <div id="selectNoPreference">
-        <form id="noPreferenceForm">
-          <h6>Are you more interested in perfecting one project or working on multiple, smaller projects?</h6>
-          <div class="radio">
-            <label>
-              <input type="radio" name="selectNoPreference" value="one" >
-              Focus on One
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="selectNoPreference" value="multiple" >
-              Focus on Multiple
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success" name="button">Go!</button>
-        </form>
-      </div>
-      <div id="selectOne">
-        <h5><span class="userName"></span> you should study: <span class="highlight">Java</span></h5>
-        <h6>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</h6>
-        <form class="helpQuery">
-          <br>
-          <p>Was this quiz helpful to you?</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="yes" >
-              Yes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="no">
-              No
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success" name="button">Go!</button>
-        </form>
-      </div>
-      <div id="selectMultiple">
-        <h5><span class="userName"></span> You should study: <span class="highlight">PHP</span></h5>
-        <h6>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</h6>
-        <form class="helpQuery">
-          <br>
-          <p>Was this quiz helpful to you?</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="yes" >
-              Yes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="helpQuery" value="no">
-              No
-            </label>
-          </div>
-          <button type="submit" class="btn btn-success" name="button">Go!</button>
-        </form>
-      </div>
-      <button id="backToMain" onclick="history.go()" type="btn" name="button">Back to Start</button>
     </div>
-  </body>
+    <div id="selectBroad">
+      <h5><span class="userName"></span> you should study: <span class="highlight">Web Design</span></h5>
+      <h6>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces. </h6>
+      <form class="helpQuery">
+        <br>
+        <p>Was this quiz helpful to you?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="yes" >
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="no">
+            No
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
+    </div>
+    <form id="selectBackEnd">
+      <h6>Are you more interested in working for a large company or a smaller business/startup?</h6>
+      <div class="radio">
+        <label>
+          <input type="radio" name="selectBackEnd" value="large" >
+          Large Company
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="selectBackEnd" value="small" >
+          Small Company/Startup
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="selectBackEnd" value="noPreference">
+          No Preference
+        </label>
+      </div>
+      <button type="submit" class="btn btn-success" name="button">Go!</button>
+    </form>
+    <div id="selectLarge">
+      <h5><span class="userName"></span> you should study: <span class="highlight">C#</span></h5>
+      <h6>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</h6>
+      <form class="helpQuery">
+        <br>
+        <p>Was this quiz helpful to you?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="yes" >
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="no">
+            No
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
+    </div>
+    <div id="selectSmall">
+      <h5><span class="userName"></span> you should study: <span class="highlight">Ruby</span></h5>
+      <h6>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</h6>
+      <form class="helpQuery">
+        <br>
+        <p>Was this quiz helpful to you?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="yes" >
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="no">
+            No
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
+    </div>
+    <div id="selectNoPreference">
+      <form id="noPreferenceForm">
+        <h6>Are you more interested in perfecting one project or working on multiple, smaller projects?</h6>
+        <div class="radio">
+          <label>
+            <input type="radio" name="selectNoPreference" value="one" >
+            Focus on One
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="selectNoPreference" value="multiple" >
+            Focus on Multiple
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
+    </div>
+    <div id="selectOne">
+      <h5><span class="userName"></span> you should study: <span class="highlight">Java</span></h5>
+      <h6>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</h6>
+      <form class="helpQuery">
+        <br>
+        <p>Was this quiz helpful to you?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="yes" >
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="no">
+            No
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
+    </div>
+    <div id="selectMultiple">
+      <h5><span class="userName"></span> You should study: <span class="highlight">PHP</span></h5>
+      <h6>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</h6>
+      <form class="helpQuery">
+        <br>
+        <p>Was this quiz helpful to you?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="yes" >
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="helpQuery" value="no">
+            No
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Go!</button>
+      </form>
+    </div>
+    <button id="backToMain" onclick="history.go()" type="btn" name="button">Back to Start</button>
+  </div>
+</body>
 </html>

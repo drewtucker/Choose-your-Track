@@ -6,6 +6,7 @@ $(document).ready(function() {
     $("form#frontOrBack").fadeToggle();
     $("form#nameEntry").hide();
     $(".userName").text(userInput + ",");
+    $("#decidingWhich").hide();
 });
 
   //Logic for form asking whether user would prefer to learn Front End or Back End//
@@ -15,7 +16,6 @@ $(document).ready(function() {
     if (userInput === "frontEnd") {
       $("form#selectFrontEnd").fadeToggle();
       $("form#frontOrBack").hide();
-      $("#decidingWhich").hide();
     }
     else if (userInput === "backEnd") {
       $("form#selectBackEnd").fadeToggle();
@@ -70,7 +70,7 @@ $(document).ready(function() {
     }
 
 });
-
+  //Logic for form asking if the quiz was helpful or not.//
   $("form.helpQuery").submit(function() {
     var userInput = $("input:radio[name=helpQuery]:checked").val();
     event.preventDefault();
