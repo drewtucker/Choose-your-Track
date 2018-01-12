@@ -40,4 +40,14 @@
 
 #backToMain {
   float: right;
+  background-color: steelblue;
+  border-radius: 8px;
+}
+
+.jumbotron {
+  background-color: steelblue;
+}
+
+body {
+  background-color: whitesmoke;
 }

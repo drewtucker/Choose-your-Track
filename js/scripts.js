@@ -6,10 +6,12 @@ $(document).ready(function() {
     if (userInput === "frontEnd") {
       $("form#selectFrontEnd").show();
       $("form#frontOrBack").hide();
+      $("#decidingWhich").hide();
     }
     else if (userInput === "backEnd") {
       $("form#selectBackEnd").show();
       $("form#frontOrBack").hide();
+      $("#decidingWhich").hide();
     }
   });
 
